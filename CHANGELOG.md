@@ -25,3 +25,11 @@
 - Committed and pushed all 15 project files to GitHub
 - Established automated GitHub updates for future changes
 - Project now ready for collaboration and sharing
+
+## 2025-01-09 21:30:00
+- Enhanced Kalshi Data Viewer with real-time price display
+- Added proper price formatting ($X.XX instead of cents)
+- Implemented direct links to Kalshi website for each market
+- Added "Get Live Prices" button for real-time data updates
+- Improved export functionality with clickable Kalshi links
+- Enhanced UI with better price visibility and market links
