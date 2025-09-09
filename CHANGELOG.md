@@ -1,0 +1,19 @@
+# Project Changelog
+
+## 2025-01-09 20:13:00
+- Successfully installed Node.js v24.7.0 and npx v11.5.1
+- Tested MCP (Model Context Protocol) server configuration
+- Verified sequential-thinking MCP server is working correctly
+- MCP server provides sequential thinking tool for complex problem-solving
+- Server version: 0.2.0, Protocol version: 2024-11-05
+- Added filesystem MCP server to configuration for additional tools
+- Troubleshooting MCP connection issues with Cursor
+
+## 2025-01-09 20:45:00
+- Created comprehensive Kalshi API client for data extraction
+- Built KalshiTopVolumesExtractor to get top 5 markets by volume per category
+- Implemented category browsing for Politics, Sports, Crypto, World, Economics, Culture
+- Added data export functionality with JSON output and timestamps
+- Created example usage scripts and requirements.txt
+- Added volume-based market ranking and summary reporting
+- Built simple runner script for easy execution
