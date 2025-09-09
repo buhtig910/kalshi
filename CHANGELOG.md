@@ -33,3 +33,11 @@
 - Added "Get Live Prices" button for real-time data updates
 - Improved export functionality with clickable Kalshi links
 - Enhanced UI with better price visibility and market links
+
+## 2025-01-09 21:45:00
+- Fixed price display to show actual bid/ask prices from API data
+- Corrected price conversion from usd_cent format to dollar amounts
+- Added detailed price breakdown showing YES/NO bid/ask spreads
+- Created debug viewer to analyze raw price data structure
+- Fixed Kalshi URL format with multiple fallback options
+- Enhanced price display with last price and bid/ask information
