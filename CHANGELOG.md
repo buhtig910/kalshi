@@ -41,3 +41,9 @@
 - Created debug viewer to analyze raw price data structure
 - Fixed Kalshi URL format with multiple fallback options
 - Enhanced price display with last price and bid/ask information
+
+## 2025-01-09 22:00:00
+- Fixed Kalshi links to open main markets page instead of direct market URLs
+- Added user-friendly search instructions with ticker information
+- Updated export format to provide search instructions instead of broken links
+- Improved link reliability by directing users to search functionality

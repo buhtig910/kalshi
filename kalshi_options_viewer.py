@@ -485,23 +485,17 @@ class KalshiOptionsViewer:
             return
         
         import webbrowser
-        # Try different possible URL formats for Kalshi
-        possible_urls = [
-            f"https://kalshi.com/markets/{ticker}",
-            f"https://kalshi.com/market/{ticker}",
-            f"https://kalshi.com/trade/{ticker}",
-            f"https://kalshi.com/events/{ticker}",
-            f"https://kalshi.com/markets?ticker={ticker}",
-            f"https://kalshi.com/search?q={ticker}"
-        ]
         
-        # Open the first URL (most likely format)
-        webbrowser.open(possible_urls[0])
+        # Open the main Kalshi markets page
+        webbrowser.open("https://kalshi.com/markets")
         
-        # Also show a message with the ticker for manual search
-        messagebox.showinfo("Kalshi Link", 
-                           f"Opening Kalshi for market: {ticker}\n\n"
-                           f"If the link doesn't work, search for '{ticker}' on kalshi.com")
+        # Show a message with the ticker for manual search
+        messagebox.showinfo("Kalshi Market Search", 
+                           f"Market Ticker: {ticker}\n\n"
+                           f"1. The Kalshi markets page has been opened\n"
+                           f"2. Search for: '{ticker}'\n"
+                           f"3. Or look for the market title in the list\n\n"
+                           f"Note: Some markets may be closed or restricted")
     
     def export_data(self):
         """Export current view to a file"""
@@ -554,7 +548,7 @@ class KalshiOptionsViewer:
                                     if min_val is not None and max_val is not None:
                                         f.write(f"   Range: {min_val} to {max_val}\n")
                             
-                            f.write(f"   Kalshi Link: https://kalshi.com/markets/{market.get('ticker', 'N/A')}\n\n")
+                            f.write(f"   Search on Kalshi: https://kalshi.com/markets (search for '{market.get('ticker', 'N/A')}')\n\n")
                         
                         f.write("\n")
                 
